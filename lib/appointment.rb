@@ -4,11 +4,11 @@ class Appointment
 
 	attr_accessor :name, :doctor, :patient 
 
-	def initialize(name, appointment)
+	def initialize(date, doctor)
 		# binding.pry
-		@name = name
-		@appointment = appointment
-		appointment.add_appointment(self)
+		@date = date
+		@doctor = doctor
+		doctor.add_appointment(self)
 	end
 
  
